@@ -66,12 +66,12 @@ h1 {
 
 #left-hero-section-container span,
 #left-hero-section-container button,
-#left-hero-section-container a {
+#cancel-subscription {
   font-size: var(--font-size-primary);
   line-height: 24px;
 }
 
-#left-hero-section-container span:first-of-type {
+#left-hero-section-container span {
   padding-right: 38px;
 }
 
@@ -86,9 +86,11 @@ h1 {
 }
 
 #left-hero-section-container span:last-of-type {
-  font-size: 48px;
   padding-top: 36px;
-  margin-bottom: 36px;
+}
+
+#header-scroll {
+  font-size: 48px;
 }
 
 #right-hero-section-container {
@@ -100,3 +102,5 @@ h1 {
   object-fit: cover;
   margin-bottom: -150px;
 }
+
+                                    /* inizio main */
