@@ -1,6 +1,8 @@
 :root {
-  --primary-color: rgba(180,208,231,255);
+  --primary-bg-color: rgba(180,208,231,255);
   --bg-button-color: rgba(0,97,255,255);
+  --primary-padding: 70px;
+  --font-size-primary: 16px;
 }
 
 * {
@@ -20,7 +22,7 @@ nav {
 nav div {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 44px;
 }
 
 button {
@@ -35,16 +37,66 @@ nav button {
 
 .hero-section {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  background-color: var(--primary-bg-color);
 }
 
 .hero-section > div {
   width: 100%;
   max-width: 1200px;
+  margin: auto;
+  padding: var(--primary-padding) 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.left-hero-section-container {
+h1 {
+  width: 100%;
+  font-size: 84px;    /* 7rem */
+  padding-bottom: 56px;
+}
+
+#left-hero-section-container {
+  width: 400px;
   display: flex;
   flex-direction: column;
+  gap: 22px;
+  align-items: flex-start;
+  margin-bottom: calc(var(--primary-padding) * -1);
+}
+
+#left-hero-section-container span,
+#left-hero-section-container button,
+#left-hero-section-container a {
+  font-size: var(--font-size-primary);
+  line-height: 24px;
+}
+
+#left-hero-section-container span:first-of-type {
+  padding-right: 38px;
+}
+
+#left-hero-section-container button {
+  margin: 0;
+  padding: 10px 25px;
+}
+
+#left-hero-section-container a {
+  text-decoration: none;
+  color: black;
+}
+
+#left-hero-section-container span:last-of-type {
+  font-size: 48px;
+  padding-top: 36px;
+  margin-bottom: 36px;
+}
+
+#right-hero-section-container {
+  width: 800px;
+}
+
+#right-hero-section-container img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: -150px;
 }
