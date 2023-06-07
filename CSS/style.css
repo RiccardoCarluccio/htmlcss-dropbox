@@ -246,6 +246,18 @@ h3 {
   font-size: 17px;
 }
 
+                  /* terza sezione del main - operazioni con dropbox */
+.operations-container {
+  flex-direction: column;
+}
+
+.operations-container h2 {
+  width: 100%;
+}
+
+.small-container-operations {
+
+}
 
 /* DOMANDE
     linea 210: Come fare meglio del settare manualmente il flex-basis?
