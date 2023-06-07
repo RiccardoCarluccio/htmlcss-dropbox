@@ -206,7 +206,7 @@ h3 {
 }
 
 .horizontal-container-right-box button {
-  padding: 10px 39px;
+  padding: 10px 41px;
 }
 
                     /* seconda sezione del main - entra in contatto */
@@ -224,13 +224,29 @@ h3 {
   padding: 40px 25px 0 50px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 16px;
+}
+
+#get-in-touch-right-container h3 {
+  line-height: 34px;
+}
+
+#get-in-touch-right-container p {
+  line-height: 21px;
+  font-size: 17px;
+}
+
+#get-in-touch-right-container button {
+  width: 55%;
+  margin-top:20px;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  font-size: 17px;
 }
 
 
-
-
 /* DOMANDE
-    linea 167: come non far cambiare la dimensione dei container, nonstante cambi il font-size?
     linea 210: Come fare meglio del settare manualmente il flex-basis?
 */
