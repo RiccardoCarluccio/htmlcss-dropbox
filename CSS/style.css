@@ -13,6 +13,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   width: 100%;
   padding: 20px;
@@ -77,7 +81,6 @@ h1 {
 }
 
 #left-hero-section-container button {
-  margin: 0;
   padding: 10px 25px;
 }
 
@@ -107,6 +110,7 @@ h1 {
                                     /* inizio main */
 h2 {
   font-size: 42px;
+  margin-bottom: 60px;
 }
 
 main > div {
@@ -121,35 +125,62 @@ main > div {
   gap: 40px;
 }
 
-#business-plan-title {
-  flex-basis: 100%;
+.bordered-rectangle {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--light-border-color);
 }
 
 .slim-col {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding: 25px;
-  gap: 40px;
-  border: 1px solid var(--light-border-color);
+  margin-top: 16px;
+  padding: 10px 25px 60px;
+  gap: 50px;
   flex-basis: 0;
   flex-grow: 1;
 }
 
-.slim-col > span {
+.slim-col > span,
+.lounge-col > span {
   border-bottom: .5px solid var(--light-border-color);
   padding-bottom: 10px;
-  margin: 0 -25px;
   text-align: center;
+}
+
+.slim-col > span {
+  margin: 0 -25px;
+}
+
+.lounge-col > span {
+  padding: 10px;
 }
 
 .slim-col div {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 24px;
 }
 
 h3 {
   font-size: 28px;
 }
 
+.bordered-rectangle button {
+  padding: 10px;
+  font-size: var(--font-size-primary);
+}
+
+.lounge-col {     /* contenitore orizzontale */
+  flex-grow: 1;
+}
+
+.lounge-col > div {
+  display: flex;
+}
+
+.right-container-left-box {
+  width: 75%;
+}
+
+.left-container-left-box {
+  width: 25%;
+}
