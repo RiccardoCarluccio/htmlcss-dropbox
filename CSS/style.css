@@ -1,8 +1,9 @@
 :root {
   --primary-bg-color: rgba(180,208,231,255);
   --bg-button-color: rgba(0,97,255,255);
-  --primary-padding: 70px;
+  --primary-spacing: 70px;
   --font-size-primary: 16px;
+  --light-border-color: rgba(236,236,237,255);
 }
 
 * {
@@ -44,7 +45,7 @@ nav button {
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  padding: var(--primary-padding) 0;
+  padding: var(--primary-spacing) 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -61,7 +62,7 @@ h1 {
   flex-direction: column;
   gap: 22px;
   align-items: flex-start;
-  margin-bottom: calc(var(--primary-padding) * -1);
+  margin-bottom: calc(var(--primary-spacing) * -1);
 }
 
 #left-hero-section-container span,
@@ -90,7 +91,7 @@ h1 {
 }
 
 #header-scroll {
-  font-size: 48px;
+  font-size: 48px;      /* da provare con position absolute */
 }
 
 #right-hero-section-container {
@@ -104,3 +105,33 @@ h1 {
 }
 
                                     /* inizio main */
+
+main > div {
+  width: 100%;
+}
+
+.slim-main-container {
+  width: 100%;
+  max-width: 980px;
+  margin: calc(var(--primary-spacing) * 2) auto;
+}
+
+.professional {
+  width: 33%;   /* temporaneo */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 50px;
+  border: 1px solid var(--light-border-color);
+}
+
+.professional > span {
+  border-bottom: .5px solid var(--light-border-color);
+}
+
+.professional div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
