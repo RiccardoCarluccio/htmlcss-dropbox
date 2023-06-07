@@ -177,10 +177,26 @@ h3 {
   display: flex;
 }
 
-.right-container-left-box {
-  width: 75%;
+.horizontal-container-left-box,
+.horizontal-container-right-box {
+  padding: 25px;
 }
 
-.left-container-left-box {
-  width: 25%;
+.horizontal-container-left-box {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.horizontal-container-left-box span:last-of-type {
+  margin-top: 30px;
+}
+
+.horizontal-container-right-box {
+  width: 35%;
+}
+
+.horizontal-container-right-box button {
+  padding: 10px 36px;
 }
