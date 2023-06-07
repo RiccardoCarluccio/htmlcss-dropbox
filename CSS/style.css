@@ -106,32 +106,50 @@ h1 {
 
                                     /* inizio main */
 
+h2 {
+  font-size: 42px;
+}
+
 main > div {
   width: 100%;
 }
 
 .slim-main-container {
-  width: 100%;
   max-width: 980px;
   margin: calc(var(--primary-spacing) * 2) auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.professional {
-  width: 33%;   /* temporaneo */
+#business-plan-title {
+  flex-basis: 100%;
+}
+
+.slim-col {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 10px;
-  gap: 50px;
+  padding: 25px;
+  gap: 40px;
   border: 1px solid var(--light-border-color);
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
-.professional > span {
+.slim-col > span {
   border-bottom: .5px solid var(--light-border-color);
+  padding-bottom: 10px;
+  margin: auto -25px;
+  text-align: center;
 }
 
-.professional div {
+.slim-col div {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+h3 {
+  font-size: 28px;
 }
