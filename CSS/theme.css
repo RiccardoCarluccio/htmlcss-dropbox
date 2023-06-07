@@ -1,0 +1,13 @@
+                  /* stili testo */
+.bold-text {
+  font-weight: 600;
+}
+
+                  /* colori testo */
+.text-grey {
+  color: grey;
+}
+
+.text-blue {
+  color: rgba(0,97,255,255);
+}
