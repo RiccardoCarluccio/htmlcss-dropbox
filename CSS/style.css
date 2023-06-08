@@ -313,12 +313,34 @@ h3 {
   display: flex;
 }
 
-.companies-square {
+.companies-squares {
   border: 1px dashed black;         /* placeholder */
   width: calc(100% / 3);
-  height: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.companies-mini-square {
+  border: 15px solid transparent;
+  width: 50%;
+  /* aspect-ratio: 1/1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.companies-mini-square:hover {
+  border-color: rgba(209,233,205,255);
+}
+
+.companies-mini-square svg,
+.companies-mini-square img {
+  width: 60%;
+  height: 60%;
+  fill: white;
+  object-fit: contain;
+}
 /* DOMANDE
     linea 210: Come fare meglio del settare manualmente il flex-basis?
 */
