@@ -305,6 +305,20 @@ h3 {
   margin-bottom: var(--primary-spacing);
 }
 
+                /* quinta sezione del main - companies */
+.companies-container {
+  background-color: rgb(231, 141, 39);    /* placeholder */
+  width: 100%;
+  height: calc(100vw / 3);
+  display: flex;
+}
+
+.companies-square {
+  border: 1px dashed black;         /* placeholder */
+  width: calc(100% / 3);
+  height: 100%;
+}
+
 /* DOMANDE
     linea 210: Come fare meglio del settare manualmente il flex-basis?
 */
