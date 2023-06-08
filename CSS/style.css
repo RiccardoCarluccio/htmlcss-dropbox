@@ -307,37 +307,35 @@ h3 {
 
                 /* quinta sezione del main - companies */
 .companies-container {
-  background-color: rgb(231, 141, 39);    /* placeholder */
   width: 100%;
   height: calc(100vw / 3);
   display: flex;
 }
 
 .companies-squares {
-  border: 1px dashed black;         /* placeholder */
   width: calc(100% / 3);
   aspect-ratio: 1/1;
   display: flex;
   flex-wrap: wrap;
 }
 
+.companies-squares:nth-of-type(2) {
+  background-color: rgba(245,245,245,255);
+}
+
 .companies-mini-square {
   border: 15px solid transparent;
   width: 50%;
-  /* aspect-ratio: 1/1; */
+  aspect-ratio: 1/1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.companies-mini-square:hover {
-  border-color: rgba(209,233,205,255);
-}
-
 .companies-mini-square svg,
 .companies-mini-square img {
   width: 60%;
-  height: 60%;
+  height: auto;
   fill: white;
   object-fit: contain;
 }
